@@ -1,0 +1,19 @@
+{
+  "name": "lubart-alert-component",
+  "version": "1.0.0",
+  "description": "Implement different types of alert messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "no"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".git"
+  },
+  "keywords": [
+    "vue",
+    "alert"
+  ],
+  "author": "Viacheslav Dymarchuk",
+  "license": "UNLICENSED"
+}
