@@ -1,7 +1,9 @@
 <template>
     <div :class="'alert-component alert-component__' + status">
         <ul>
-            <li v-for="note in notes">{{ note }}</li>
+            <li v-if="renderHtml" v-for="note in notes" v-html="note"></li>
+
+            <li v-if="!renderHtml" v-for="note in notes">{{ note }}</li>
         </ul>
     </div>
 </template>
@@ -12,7 +14,8 @@
 
         props: {
             status: {type: String, default: "success"}, // available values are: danger, success, info, warning
-            notes: {type: Object}
+            notes: {type: Object},
+            renderHtml: {type: Boolean, default: false}
         }
     }
 </script>
