@@ -20,7 +20,7 @@ $ sinopia
 To install the component run:
 
 ```bash
-$ npm i lubart-alert-component --save
+$ npm i lubart-vue-alert-component --save
 ```
 
 Next, you must register the component in the app.js (or similar) file.
@@ -29,7 +29,7 @@ The most common use case is to do that globally.
 ```js
 //in your app.js or similar file
 import Vue from 'vue';
-import { AlertComponent } from 'lubart-alert-component';
+import { AlertComponent } from 'lubart-vue-alert-component';
 
 Vue.component('alert-component', AlertComponent);
 ```
@@ -39,7 +39,7 @@ Alternatively you can do:
 ```js
 //in your app.js or similar file
 import Vue from 'vue';
-import AlertComponent from 'lubart-alert-component';
+import AlertComponent from 'lubart-vue-alert-component';
 
 AlertComponent.register(Vue);
 ```
